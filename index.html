@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Olivia Ros - Sitio Web Personal">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Olivia Ros</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 132px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-section" style="background-image: url('assets/img/bg-hero.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="text-center text-white">
+            <h1 class="display-4">Comidas del fin del mundo</h1>
+            <p class="lead">Descubre recetas únicas y lugares asombrosos con Olivia Ros</p>
+            <a href="#about" class="btn btn-primary">Trabajo</a>
+            <a href="#contact" class="btn btn-outline-light">Contacto</a>
+        </div>
+    </header>
+
+    <section id="about" class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Acerca de mí</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-camera-retro fa-3x mb-3"></i>
+                <h3>Fotógrafa de comida</h3>
+                <p>Capturo la esencia de cada plato con fotografías únicas y creativas.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-utensils fa-3x mb-3"></i>
+                <h3>Crítica culinaria</h3>
+                <p>Analizo y critico restaurantes y platos de todo el mundo.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-globe fa-3x mb-3"></i>
+                <h3>Bloguera de viajes</h3>
+                <p>Comparto mis aventuras y experiencias gastronómicas en mis viajes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-info text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mis trabajos</h2>
+            <div class="row"  style="color: black;">
+                <div class="col-md-4">
+                    <div class="card" >
+                        <img src="assets/img/card-1.jpg" class="card-img-top" alt="Asado en la Patagonia">
+                        <div class="card-body">
+                            <h5 class="card-title">Asado en la Patagonia</h5>
+                            <p class="card-text">Descripción breve del trabajo realizado en la Patagonia.</p>
+                            <a href="#" class="btn btn-outline-info">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/card-2.jpg" class="card-img-top" alt="Papas del fin del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Papas del fin del mundo</h5>
+                            <p class="card-text">Descripción breve del trabajo realizado con papas en el fin del mundo.</p>
+                            <a href="#" class="btn btn-outline-info">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/card-3.jpg" class="card-img-top" alt="Salmones de Alaska">
+                        <div class="card-body">
+                            <h5 class="card-title">Salmones de Alaska</h5>
+                            <p class="card-text">Descripción breve del trabajo realizado en Alaska.</p>
+                            <a href="#" class="btn btn-outline-info">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="text-center bg-dark text-white py-4">
+        <p class="mb-0">© 2023 Olivia Ros. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
